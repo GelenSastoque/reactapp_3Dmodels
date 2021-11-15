@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&display=swap');
+
+.estilotitulo {
+    background-color:rgb(0, 0, 0);
+    padding: 20px;
+    width: auto;
+    /* border-bottom: slategray outset 5px;*/
+    box-shadow: 2px 1px 5px 5px rgb(213, 216, 219);
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 40px;
+    color:rgba(255, 255, 255, 0.836) 
+}

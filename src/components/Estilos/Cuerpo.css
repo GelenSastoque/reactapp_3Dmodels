@@ -1,0 +1,73 @@
+.personalizarcuerpo{
+    background-color:#ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 40px;
+}
+
+.cuadro{
+    background-color: rgb(255, 255, 255);
+    padding:10px;
+    height: 240px;
+    width: 240px;
+    box-shadow: 3px 3px 3px 3px rgb(218, 218, 218);
+    border-radius: 8px;
+    /* justify-content: center;
+    align-items: center;
+    align-content: center; */
+    /* margin-top: 50px; */
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.nombremoto{
+    /* width: 80%; */
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.836);
+    padding-top: -20px;
+    /* background-color: turquoise;
+    width: 100%;
+    float: inline-end; */
+}
+.marcamoto{
+    /* width: 80%; */
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color:rgba(34, 34, 34, 0.836);
+    padding-top: 5px;
+    /* background-color: turquoise;
+    width: 100%;
+    float: inline-end; */
+}
+.x{
+
+    margin: 40px;
+}
+
+.botones{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 17px;
+    padding-left:15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 2px;
+    width: 100%;
+    border:none;
+    background-color: rgba(255, 94, 0, 0.836);
+    color:rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+}
+.TitVisModelo{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 35px;
+    text-align: left;
+    color:rgba(0, 0, 0, 0.836);
+}
