@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Navbar from "./components/Navbar";
 import Cuerpo from "./components/Cuerpo";
 import Footer from "./components/Footer";
+import Paginamodelo from "./components/Paginamodelo";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Cuerpo />
       <Footer />
+      {/* <Paginamodelo /> */}
     </div>
   );
 }

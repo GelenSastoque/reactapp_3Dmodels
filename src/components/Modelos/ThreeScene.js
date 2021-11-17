@@ -11,7 +11,7 @@ class ThreeScene extends Component {
 
     //Add Renderer
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
-    this.renderer.setClearColor("#263238");
+    this.renderer.setClearColor("#FFFFFF");
     this.renderer.setSize(width, height);
     this.mount.appendChild(this.renderer.domElement);
 
@@ -25,9 +25,9 @@ class ThreeScene extends Component {
 
     //LIGHTS
     var lights = [];
-    lights[0] = new THREE.PointLight(0x304ffe, 1, 0);
-    lights[1] = new THREE.PointLight(0xffffff, 1, 0);
-    lights[2] = new THREE.PointLight(0xffffff, 1, 0);
+    lights[0] = new THREE.PointLight(0xffffff, 0.2, 0);
+    lights[1] = new THREE.PointLight(0xffffff, 0.7, 0);
+    lights[2] = new THREE.PointLight(0xffffff, 0.5, 0);
     lights[0].position.set(0, 200, 0);
     lights[1].position.set(100, 200, 100);
     lights[2].position.set(-100, -200, -100);
@@ -49,18 +49,18 @@ class ThreeScene extends Component {
     //Loading Material First
     var mtlLoader = new MTLLoader();
     mtlLoader.setBaseUrl("./assets/");
-    mtlLoader.load("", materials => {
+    mtlLoader.load("MotoJJMaterial.mtl", materials => {
       materials.preload();
       console.log("Material loaded");
       //Load Object Now and Set Material
       var objLoader = new OBJLoader();
       objLoader.setMaterials(materials);
       objLoader.load(
-        "./assets/Motogelen.obj",
+        "./assets/MotoJuanJose.obj",
         object => {
           this.freedomMesh = object;
-          this.freedomMesh.position.setY(3); //or  this
-          this.freedomMesh.scale.set(0.6, 0.6, 0.6);
+          this.freedomMesh.position.setY(-3); //or  this
+          this.freedomMesh.scale.set(1.7, 1.7, 1.7);
           this.scene.add(this.freedomMesh);
         },
         xhr => {
@@ -102,7 +102,7 @@ class ThreeScene extends Component {
   render() {
     return (
       <div
-        style={{ width: "800px", height: "600px" }}
+        style={{ width: "350px", height: "350px" }}
         ref={mount => {
           this.mount = mount;
         }}
