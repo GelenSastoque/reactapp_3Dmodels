@@ -4,6 +4,7 @@ import Popup from 'reactjs-popup';
 import MotoBreakout from './Imagenes/MotoBreakout.png';
 import MotoFatboyHarley from './Imagenes/MotoFatboyHarley.PNG';
 import TrikeFreewheeler from './Imagenes/TrikeFreewheeler.png';
+import MotoZanella from './Imagenes/MotoZanella.jpg';
 import ThreeScene from './Modelos/ThreeScene';
 
 function Cuerpo() {
@@ -28,7 +29,7 @@ function Cuerpo() {
           </Grid>
           <Grid item xs={3} >
             <div className="cuadro">
-              <img src={TrikeFreewheeler} alt="Moto3" width="100%" />
+              <img src={MotoZanella} alt="Moto4" width="100%" />
             </div>
           </Grid>
           <Grid xs={3}>
@@ -58,7 +59,7 @@ function Cuerpo() {
           </Grid>
           <Grid xs={3}>
             <div className="nombremoto">
-              Trike Free Wheeler 2021
+              Zanella Ceccato R150 2021
             </div>
             <div className="marcamoto">
               Harley Davidson
@@ -66,7 +67,7 @@ function Cuerpo() {
           </Grid>
           <Grid item xs={3}>
             <Popup
-              trigger={<button className="botones"> Ver más 1 </button>}
+              trigger={<button className="botones"> Ver más </button>}
               modal
               nested
             >
@@ -129,7 +130,7 @@ function Cuerpo() {
                                 width: "100%",
                                 height: '350px'
                               }}
-                              title="Moto"
+                              title="Moto Harley-Davidson Breakout 2021"
                               frameborder="0"
                               allowfullscreen
                               mozallowfullscreen="true"
@@ -139,7 +140,7 @@ function Cuerpo() {
                               execution-while-out-of-viewport
                               execution-while-not-rendered
                               web-share
-                              src="https://sketchfab.com/models/82c3482d12f84bab89ae8be7ccb9844f/embed"
+                              src="https://sketchfab.com/models/1ec6e82aabbd4c3c9376e01b13e0f65d/embed?autospin=1&camera=0"
                             ></iframe>
                           </div>
                         </Grid>
@@ -157,7 +158,7 @@ function Cuerpo() {
           </Grid>
           <Grid item xs={3}>
             <Popup
-              trigger={<button className="botones"> Ver más 1 </button>}
+              trigger={<button className="botones"> Ver más </button>}
               modal
               nested
             >
@@ -230,7 +231,7 @@ function Cuerpo() {
                               execution-while-out-of-viewport
                               execution-while-not-rendered
                               web-share
-                              src="https://sketchfab.com/models/82c3482d12f84bab89ae8be7ccb9844f/embed"
+                              src="https://sketchfab.com/models/56dca229c6c3455ba05cb16fa3190229/embed?autospin=1&camera=0"
                             ></iframe>
                           </div>
                         </Grid>
@@ -248,7 +249,7 @@ function Cuerpo() {
           </Grid>
           <Grid item xs={3}>
             <Popup
-              trigger={<button className="botones"> Ver más 1 </button>}
+              trigger={<button className="botones"> Ver más </button>}
               modal
               nested
             >
@@ -321,7 +322,7 @@ function Cuerpo() {
                               execution-while-out-of-viewport
                               execution-while-not-rendered
                               web-share
-                              src="https://sketchfab.com/models/82c3482d12f84bab89ae8be7ccb9844f/embed"
+                              src="https://sketchfab.com/models/c14c88249e7e4d2b9e5476865a4bd208/embed?autospin=1&camera=0"
                             ></iframe>
                           </div>
                         </Grid>
@@ -339,7 +340,7 @@ function Cuerpo() {
           </Grid>
           <Grid item xs={3}>
             <Popup
-              trigger={<button className="botones"> Ver más 1 </button>}
+              trigger={<button className="botones"> Ver más </button>}
               modal
               nested
             >
@@ -367,7 +368,7 @@ function Cuerpo() {
                       <div
                         className="TitVisModelo"
                       >
-                        Trike Free Wheeler 2021
+                        Zanella Ceccato R150 2021
                       </div>
                     </Grid>
                     <Grid

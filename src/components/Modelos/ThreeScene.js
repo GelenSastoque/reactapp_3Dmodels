@@ -17,8 +17,8 @@ class ThreeScene extends Component {
 
     //add Camera
     this.camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
-    this.camera.position.z = 20;
-    this.camera.position.y = 5;
+    this.camera.position.z = 25;
+    this.camera.position.y = 15;
 
     //Camera Controls
     const controls = new OrbitControls(this.camera, this.renderer.domElement);
@@ -49,14 +49,14 @@ class ThreeScene extends Component {
     //Loading Material First
     var mtlLoader = new MTLLoader();
     mtlLoader.setBaseUrl("./assets/");
-    mtlLoader.load("MotoJJMaterial.mtl", materials => {
+    mtlLoader.load("CristianMcLP.mtl", materials => {
       materials.preload();
       console.log("Material loaded");
       //Load Object Now and Set Material
       var objLoader = new OBJLoader();
       objLoader.setMaterials(materials);
       objLoader.load(
-        "./assets/MotoJuanJose.obj",
+        "./assets/CristianMcLP.obj",
         object => {
           this.freedomMesh = object;
           this.freedomMesh.position.setY(-3); //or  this
